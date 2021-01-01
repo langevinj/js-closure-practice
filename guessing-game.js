@@ -4,8 +4,8 @@ function guessingGame() {
     let won = false;
     
     return function guess(num) {
-        count++;
         if(won) return "The game is over, you already won!"
+        count++;
         if(randomNum === num){
             won = true;
             return `You win! You found ${randomNum} in ${count} guesses.`
